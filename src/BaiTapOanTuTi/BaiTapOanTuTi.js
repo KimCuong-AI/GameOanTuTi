@@ -3,9 +3,7 @@ import '../assets/styles/components/BaiTapOanTuTi.css'
 import Computer from './Computer'
 import KetQuaTroChoi from './KetQuaTroChoi'
 import Player from './Player'
-import ThongTinTroChoi from './ThongTinTroChoi'
 import { connect } from 'react-redux'
-
 class BaiTapOanTuTi extends Component {
     render() {
         return (

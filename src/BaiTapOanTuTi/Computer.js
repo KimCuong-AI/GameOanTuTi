@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-
 class Computer extends Component {
     render() {
         let keyframe=`@keyframes randomItem${Date.now()}{

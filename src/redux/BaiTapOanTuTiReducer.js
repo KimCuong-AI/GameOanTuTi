@@ -8,7 +8,6 @@ const stateDefault = {
     soBanThang: 0,
     soBanChoi: 0,
     computer:
-
         { ma: 'keo', hinhAnh: './img/gameOanTuTi/keo.png' },
 
 
@@ -27,8 +26,6 @@ export const BaiTapOanTuTiReducer = (state = stateDefault, action) => {
             // if (index !== -1) {
             //     mangCapNhat[index].datCuoc = true;
             // }
-
-
             mangCapNhat = mangCapNhat.map((item, index) => {
                 if (item.ma === action.macuoc) {
                     return { ...item, datCuoc: true }
@@ -82,15 +79,10 @@ export const BaiTapOanTuTiReducer = (state = stateDefault, action) => {
                     break;
 
             }
-            // if (state.ketQua = "I'm iron man, i love you 3000!!!") {
-            //     state.soBanThang += 1;
-            // }
             state.soBanChoi += 1;
             return { ...state }
 
         }
-        // default: return { ...state }
+        default: return state
     }
-    return state
 }
-// export default BaiTapOanTuTiReducer;
